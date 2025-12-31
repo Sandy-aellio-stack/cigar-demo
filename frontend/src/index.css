@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Premium Cigar Lounge - Dark & Warm Theme */
+    --background: 20 10% 8%;
+    --foreground: 40 20% 92%;
+
+    --card: 20 12% 12%;
+    --card-foreground: 40 20% 92%;
+
+    --popover: 20 12% 12%;
+    --popover-foreground: 40 20% 92%;
+
+    /* Gold/Amber Primary */
+    --primary: 38 70% 50%;
+    --primary-foreground: 20 10% 8%;
+
+    /* Warm Brown Secondary */
+    --secondary: 25 30% 20%;
+    --secondary-foreground: 40 20% 92%;
+
+    /* Muted Tones */
+    --muted: 20 15% 18%;
+    --muted-foreground: 30 10% 60%;
+
+    /* Accent - Lighter Gold */
+    --accent: 40 60% 60%;
+    --accent-foreground: 20 10% 8%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 40 20% 92%;
+
+    --border: 25 20% 22%;
+    --input: 25 20% 22%;
+    --ring: 38 70% 50%;
+
+    --radius: 0.5rem;
+
+    /* Custom Design Tokens */
+    --gold: 38 70% 50%;
+    --gold-light: 40 60% 65%;
+    --gold-dark: 35 65% 40%;
+    --amber: 32 80% 45%;
+    --wood-brown: 25 40% 25%;
+    --leather-brown: 20 35% 18%;
+    --charcoal: 20 10% 12%;
+    --charcoal-deep: 20 10% 6%;
+    --cream: 40 30% 90%;
+    --cream-dark: 35 20% 75%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(180deg, hsla(20, 10%, 6%, 0.3) 0%, hsla(20, 10%, 6%, 0.85) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(20, 12%, 14%) 0%, hsl(20, 12%, 10%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(38, 70%, 50%) 0%, hsl(32, 80%, 45%) 100%);
+    --gradient-section: linear-gradient(180deg, hsl(20, 10%, 8%) 0%, hsl(20, 12%, 10%) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsla(0, 0%, 0%, 0.4);
+    --shadow-glow: 0 0 30px -5px hsla(38, 70%, 50%, 0.3);
+    --shadow-card: 0 10px 40px -10px hsla(0, 0%, 0%, 0.5);
+
+    /* Typography */
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
+
+    /* Sidebar (unused but keeping for compatibility) */
+    --sidebar-background: 20 12% 10%;
+    --sidebar-foreground: 40 20% 92%;
+    --sidebar-primary: 38 70% 50%;
+    --sidebar-primary-foreground: 20 10% 8%;
+    --sidebar-accent: 25 30% 20%;
+    --sidebar-accent-foreground: 40 20% 92%;
+    --sidebar-border: 25 20% 22%;
+    --sidebar-ring: 38 70% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  .text-gold {
+    color: hsl(var(--gold));
+  }
+
+  .text-cream {
+    color: hsl(var(--cream));
+  }
+
+  .bg-charcoal {
+    background-color: hsl(var(--charcoal));
+  }
+
+  .bg-charcoal-deep {
+    background-color: hsl(var(--charcoal-deep));
+  }
+
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .gradient-gold {
+    background: var(--gradient-gold);
+  }
+
+  .gradient-section {
+    background: var(--gradient-section);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  /* Button Variants */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-md transition-all duration-300;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    background: var(--gradient-gold);
+    color: hsl(var(--charcoal-deep));
+  }
+
+  .btn-primary:hover {
+    @apply scale-[1.02];
+    box-shadow: var(--shadow-glow);
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-md transition-all duration-300;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    background: transparent;
+    border: 2px solid hsl(var(--gold));
+    color: hsl(var(--gold));
+  }
+
+  .btn-secondary:hover {
+    background: hsl(var(--gold) / 0.1);
+    @apply scale-[1.02];
+  }
+
+  /* Hero Text Animation */
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+    opacity: 0;
+  }
+
+  .animate-fade-up-delay {
+    animation: fadeUp 0.6s ease-out 0.2s forwards;
+    opacity: 0;
+  }
+
+  .animate-fade-up-delay-2 {
+    animation: fadeUp 0.6s ease-out 0.4s forwards;
+    opacity: 0;
+  }
+
+  /* Section Container */
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Trust Badge */
+  .trust-badge {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm;
+    background: hsl(var(--charcoal) / 0.8);
+    border: 1px solid hsl(var(--border));
+    color: hsl(var(--cream-dark));
+  }
+
+  /* Card Hover Effect */
+  .card-hover {
+    @apply transition-all duration-300;
+  }
+
+  .card-hover:hover {
+    @apply -translate-y-1;
+    box-shadow: var(--shadow-card);
+  }
+
+  /* Link underline animation */
+  .link-underline {
+    @apply relative;
+  }
+
+  .link-underline::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-0.5 origin-bottom-right scale-x-0 transition-transform duration-300;
+    background: hsl(var(--gold));
+  }
+
+  .link-underline:hover::after {
+    @apply origin-bottom-left scale-x-100;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px -5px hsla(38, 70%, 50%, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px -5px hsla(38, 70%, 50%, 0.5);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+  .font-casino-logo {
+  font-family: 'Cinzel Decorative', serif;
+  letter-spacing: 0.12em;
+}
+
+.font-casino-heading {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.15em;
+}
+
+.font-body {
+  font-family: 'Libre Baskerville', serif;
+  line-height: 1.6;
+}
+* {
+  cursor: none !important;
+}
+
+
