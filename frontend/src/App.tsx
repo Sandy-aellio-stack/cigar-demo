@@ -11,8 +11,6 @@ import TopQuality from "./pages/TopQuality";
 import WhyUs from "./pages/WhyUs";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
-import AdminLogin from "./pages/AdminLogin";
-import AdminInstagram from "./pages/AdminInstagram";
 import CigarCursor from "@/components/CigarCursor";
 
 const queryClient = new QueryClient();
@@ -135,8 +133,6 @@ const AnimatedRoutes = () => {
             <Route path="/top-quality" element={<TopQuality />} />
             <Route path="/why-us" element={<WhyUs />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/admin/login" element={<AdminLogin />} />
-            <Route path="/admin/instagram" element={<AdminInstagram />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </motion.div>
