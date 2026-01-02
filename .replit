@@ -43,6 +43,7 @@ localPort = 5000
 externalPort = 5000
 
 [deployment]
-deploymentTarget = "autoscale"
+deploymentTarget = "static"
 run = ["bash", "-c", "cd backend && node index.js & cd frontend && npm run preview -- --host 0.0.0.0 --port 5000"]
 build = ["bash", "-c", "cd frontend && npm run build"]
+publicDir = "frontend/dist"

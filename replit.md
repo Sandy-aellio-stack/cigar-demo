@@ -1,29 +1,25 @@
 # Smokies Cigar Lounge Website
 
 ## Overview
-A React + Vite frontend website for Smokies Cigar Lounge with an Express.js backend for Instagram API integration.
+A React + Vite frontend website for Smokies Cigar Lounge - a premium cigar lounge in Reading, PA.
 
 ## Project Structure
 - **frontend/** - React + Vite frontend with TypeScript, Tailwind CSS, and Shadcn UI components
-- **backend/** - Express.js API server for Instagram integration
 
 ## Tech Stack
 - **Frontend**: React 18, Vite, TypeScript, Tailwind CSS, Shadcn UI, Framer Motion
-- **Backend**: Node.js, Express.js
 
 ## Running the Application
 - Frontend runs on port 5000 (0.0.0.0)
-- Backend runs on port 3000 (0.0.0.0)
 
 ## Development Commands
 - Frontend: `cd frontend && npm run dev`
-- Backend: `cd backend && npm start`
 
-## Environment Variables
-- `VITE_API_URL` - Backend API URL (default: http://localhost:3000)
-- `INSTAGRAM_TOKEN` - Instagram API access token (optional)
-- `ADMIN_USERNAME` - Admin login username
-- `ADMIN_PASSWORD` - Admin login password
+## Deployment
+- Static site deployment with `npm run build` in frontend folder
+- Built files output to `frontend/dist`
 
 ## Recent Changes
+- 2026-01-02: Updated all website copy to be more human and engaging
+- 2026-01-02: Removed backend/API dependencies (now fully static frontend)
 - 2026-01-02: Initial Replit environment setup
