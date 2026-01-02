@@ -79,6 +79,6 @@ app.get("/api/instagram/posts", async (req, res) => {
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, "localhost", () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`Instagram backend running on http://localhost:${PORT}`);
 });
