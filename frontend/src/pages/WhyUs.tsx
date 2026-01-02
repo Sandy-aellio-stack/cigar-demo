@@ -14,17 +14,17 @@ import patioGroup from '@/assets/patio-group.jpeg';
 const reviews = [
   {
     name: 'Mike R.',
-    text: 'Best cigar shop in Reading, hands down. Great selection and the staff really knows their stuff.',
+    text: 'Walked in not knowing much about cigars. The guy behind the counter spent 20 minutes helping me find something I actually liked. Been coming back every week since.',
     rating: 5,
   },
   {
     name: 'David S.',
-    text: 'Love the atmosphere here. Perfect place to unwind with a good cigar and great company.',
+    text: 'This is my escape. Good leather chair, good smoke, good people. Time moves differently here.',
     rating: 5,
   },
   {
     name: 'James T.',
-    text: 'Finally found my go-to cigar lounge. The humidor is impressive and prices are fair.',
+    text: 'Stopped looking for another spot after I found Smokies. The cigars are always fresh and the vibe is exactly what you want after a long day.',
     rating: 5,
   },
 ];
@@ -105,7 +105,7 @@ const WhyUs = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2, ease: "easeIn" }}
             >
-              More than a cigar shop — we're Reading's premier destination for premium tobacco and genuine hospitality.
+              We are not trying to be everything to everyone. Just a really good cigar lounge for people who appreciate the simple things done right.
             </motion.p>
           </div>
         </ParallaxSection>
@@ -127,7 +127,7 @@ const WhyUs = () => {
                 <span className="text-gold">From the World's Finest</span>
               </h2>
               <p className="text-cream/80 text-lg leading-relaxed">
-                {BUSINESS_INFO.brandStatements.selection}. Hand-picked cigars from the world's finest manufacturers, stored in optimal conditions. Our walk-in humidor features hundreds of premium cigars ready for you.
+                We only stock what we would smoke ourselves. Every cigar on our shelves has passed the taste test. Hundreds of options from around the world, all kept at the perfect temperature and humidity.
               </p>
             </motion.div>
 
@@ -146,7 +146,7 @@ const WhyUs = () => {
                 <span className="text-gold">Ultimate Comfort</span>
               </h2>
               <p className="text-cream/80 text-lg leading-relaxed">
-                {BUSINESS_INFO.brandStatements.lounge}. Sink into plush leather seating, catch the game on one of our TVs, and enjoy your cigar in a clean, welcoming environment.
+                Sink into a leather chair that feels like it was made for you. The game is on. The air is clean. Nobody is rushing you out. This is what relaxing is supposed to feel like.
               </p>
             </motion.div>
           </div>
@@ -180,7 +180,7 @@ const WhyUs = () => {
               >
                 <h3 className="text-2xl text-cream font-display mb-4">Coffee Bar</h3>
                 <p className="text-cream/70 text-lg leading-relaxed">
-                  {BUSINESS_INFO.brandStatements.coffeeBar}. Complement your cigar with a fresh espresso or cappuccino from our in-house coffee bar.
+                  Nothing pairs better with a good smoke than a well-made coffee. We pull fresh espresso all day, so you never have to choose between the two.
                 </p>
               </motion.div>
 
@@ -192,7 +192,7 @@ const WhyUs = () => {
               >
                 <h3 className="text-2xl text-cream font-display mb-4">BYOB Friendly</h3>
                 <p className="text-cream/70 text-lg leading-relaxed">
-                  {BUSINESS_INFO.brandStatements.byob}. Bring your favorite beverage and enjoy it alongside your cigar of choice.
+                  Prefer whiskey? Bring it. Craft beer? Sure. This is your time to unwind however you like.
                 </p>
               </motion.div>
 
@@ -204,7 +204,7 @@ const WhyUs = () => {
               >
                 <h3 className="text-2xl text-cream font-display mb-4">Entertainment</h3>
                 <p className="text-cream/70 text-lg leading-relaxed">
-                  {BUSINESS_INFO.brandStatements.entertainment}. Pool table, shuffleboard, and multiple TVs for sports and entertainment.
+                  Challenge someone to a game of pool. Catch the big game on one of our screens. Or just sit back and people-watch.
                 </p>
               </motion.div>
 
@@ -216,7 +216,7 @@ const WhyUs = () => {
               >
                 <h3 className="text-2xl text-cream font-display mb-4">Memberships</h3>
                 <p className="text-cream/70 text-lg leading-relaxed">
-                  {BUSINESS_INFO.brandStatements.memberships}. Ask about our membership options for exclusive benefits and perks.
+                  Become a regular and get treated like one. Members enjoy special pricing, exclusive events, and their own locker to store favorites.
                 </p>
               </motion.div>
             </div>
@@ -278,7 +278,7 @@ const WhyUs = () => {
               transition={{ duration: 0.7, delay: 0.4, ease: "easeOut" }}
             >
               <h3 className="font-display text-3xl text-cream mb-6">
-                Experience the Smokies Difference
+                Come See for Yourself
               </h3>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a

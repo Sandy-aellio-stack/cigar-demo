@@ -54,7 +54,7 @@ const ParallaxHero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          Visit one of our two Reading, PA locations or give us a call. We're always happy to help you find your perfect cigar.
+          Stop by, give us a call, or just walk in when you are in the area. The door is always open and there is always a seat with your name on it.
         </motion.p>
       </motion.div>
     </section>
@@ -313,10 +313,10 @@ const Contact = () => {
               transition={{ duration: 0.6 }}
             >
               <h2 className="font-display text-2xl text-cream mb-4">
-                Serving Reading, PA & Surrounding Areas
+                Proudly Serving the Reading Area
               </h2>
               <p className="text-muted-foreground">
-                Smokies Cigar Lounge proudly serves cigar enthusiasts from Reading, Wyomissing, West Reading, Shillington, and all of Berks County. Conveniently located on Lancaster Avenue, we're easily accessible from Route 422 and downtown Reading. Whether you're a local or visiting the area, we welcome you to experience Reading's premier cigar destination.
+                We have welcomed folks from Reading, Wyomissing, West Reading, Shillington, and all across Berks County. Easy to find, even easier to stay awhile. Whether you are a longtime local or just passing through, we are glad you found us.
               </p>
             </motion.div>
           </div>

@@ -87,7 +87,7 @@ const TopQuality = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: 0.2 }}
             >
-              From selection to storage, we take every step to ensure you experience cigars at their absolute best.
+              We are picky so you do not have to be. Every cigar here is stored right, inspected carefully, and ready to light.
             </motion.p>
           </div>
         </ParallaxSection>
@@ -109,7 +109,7 @@ const TopQuality = () => {
                 <span className="text-gold">Carefully Inspected</span>
               </h2>
               <p className="text-cream/80 text-lg leading-relaxed mb-6">
-                Every cigar is hand-selected from trusted manufacturers and distributors who share our commitment to quality. Before reaching our shelves, each cigar is inspected for construction, wrapper integrity, and overall quality.
+                We work with people who care about their craft as much as we do. Before anything hits our shelves, we check the construction, the wrapper, and the feel. If something is off, it does not make the cut.
               </p>
               <motion.p
                 className="text-cream/60 text-base"
@@ -170,7 +170,7 @@ const TopQuality = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: 0.2 }}
             >
-              Our experienced staff is passionate about cigars and ready to share their knowledge. Whether you're looking for a special occasion cigar or your new everyday smoke, we'll help you find exactly what you're looking for.
+              Not sure where to start? That is what we are here for. Tell us what you are in the mood for, and we will point you toward something you will love. No pressure, just honest advice.
             </motion.p>
             <motion.blockquote
               className="text-cream text-xl md:text-2xl italic font-display"
@@ -179,7 +179,7 @@ const TopQuality = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.9, delay: 0.3, ease: "easeIn" }}
             >
-              "At Smokies, we believe everyone deserves to experience a perfectly conditioned, quality cigar."
+              "A good cigar is meant to be enjoyed, not rushed. That is why we take the time to get every detail right."
               <footer className="text-gold font-medium mt-4 text-base not-italic">
                 — The Smokies Team
               </footer>
@@ -205,7 +205,7 @@ const TopQuality = () => {
                 <span className="text-gold">Reading 2025</span>
               </h2>
               <p className="text-cream/80 text-lg leading-relaxed mb-8">
-                Recognized by BusinessRate as the Best Cigar Shop in Reading for 2025, based on verified Google Reviews. This honor reflects our commitment to quality, service, and community.
+                We did not set out to win awards. We just focused on doing things right. But we are proud that our guests took the time to share their experiences online. Thank you for that.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a

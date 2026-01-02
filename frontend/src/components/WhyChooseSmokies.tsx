@@ -37,32 +37,32 @@ const WhyChooseSmokies = () => {
           </p>
 
           <h2 className="font-display text-5xl md:text-6xl text-cream leading-tight mb-10">
-            Because the experience <br />
-            matters as much as the cigar.
+            It is about more than <br />
+            just the cigar.
           </h2>
 
           <div className="space-y-6 text-cream/80 text-lg leading-relaxed">
             <p>
-              Smokies is built around time — not transactions. A place designed
-              to slow the pace, where cigars are stored properly and enjoyed
-              without rush.
+              We did not build Smokies to move inventory. We built it to give
+              people a place to breathe. To sit. To actually enjoy something
+              without looking at the clock.
             </p>
 
             <p>
-              Espresso is always on hand. Seating is intentional. Conversations
-              linger longer than the smoke itself.
+              There is always fresh coffee. The seats are comfortable on
+              purpose. And good conversations tend to happen naturally here.
             </p>
 
             <p>
-              Whether you stop in briefly or stay for the evening, Smokies is a
-              place you arrive — and don’t hurry to leave.
+              Pop in for twenty minutes or plant yourself for the night. Either
+              way, you will leave feeling better than when you walked in.
             </p>
           </div>
 
           {/* Editorial CTA */}
           <div className="mt-14">
             <Link to="/why-us" className="btn-secondary inline-flex">
-              Why Locals Love Smokies
+              Hear What Our Guests Say
               <ArrowRight className="w-5 h-5 ml-2" />
             </Link>
           </div>

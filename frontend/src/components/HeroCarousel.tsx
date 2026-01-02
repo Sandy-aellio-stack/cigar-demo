@@ -94,21 +94,21 @@ const HeroCarousel = () => {
             </h1>
 
             <p className="text-cream-dark text-lg md:text-xl mb-8 max-w-2xl mx-auto">
-              Premium Cigars · Climate-Controlled Humidors · Espresso Bar
+              Where good cigars meet great company. Pull up a chair, grab a coffee, and stay awhile.
             </p>
 
             <div className="flex flex-wrap justify-center gap-4 mb-10">
               <div className="trust-badge">
                 <Star className="w-4 h-4 text-gold" fill="currentColor" />
-                <span>Google's Best Cigar Shop 2025</span>
+                <span>Rated #1 in Reading</span>
               </div>
               <div className="trust-badge">
                 <ThermometerSnowflake className="w-4 h-4 text-gold" />
-                <span>70/70 Humidors</span>
+                <span>Perfect Humidity, Every Time</span>
               </div>
               <div className="trust-badge">
                 <Coffee className="w-4 h-4 text-gold" />
-                <span>Espresso Bar</span>
+                <span>Fresh Espresso On Tap</span>
               </div>
             </div>
 

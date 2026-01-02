@@ -3,23 +3,23 @@ import { Award, Leaf, Users, Shield } from 'lucide-react';
 const features = [
   {
     icon: Award,
-    title: 'Premium Brands',
-    description: 'Curated selection of the finest cigars from around the world',
+    title: 'Hand-Picked Selection',
+    description: 'We smoke what we sell. Every cigar here earned its spot through taste, not trends.',
   },
   {
     icon: Leaf,
-    title: 'Properly Stored',
-    description: 'Climate-controlled humidors maintain perfect humidity and freshness',
+    title: 'Kept Just Right',
+    description: 'Our humidors stay at 70/70 all year long. Your cigar draws smooth, burns even, and tastes the way it should.',
   },
   {
     icon: Users,
-    title: 'Expert Staff',
-    description: 'Knowledgeable team ready to help you find your perfect smoke',
+    title: 'Real People, Real Advice',
+    description: 'Not sure what to try? We get it. Tell us what you like, and we will point you in the right direction.',
   },
   {
     icon: Shield,
-    title: 'Quality Guaranteed',
-    description: 'Every cigar is inspected for quality before reaching our shelves',
+    title: 'No Disappointments',
+    description: 'We check every box that comes through the door. If it is not perfect, it does not hit the shelf.',
   },
 ];
 
@@ -30,13 +30,13 @@ const TrustSection = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <p className="text-gold font-medium mb-4 tracking-wide uppercase text-sm">
-            Why Cigar Lovers Choose Us
+            What Sets Us Apart
           </p>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-cream mb-6">
-            Trusted by Cigar Enthusiasts Across Reading
+            The Kind of Place You Keep Coming Back To
           </h2>
           <p className="text-muted-foreground text-lg">
-            Serving the Reading, PA community and surrounding areas with premium tobacco products and exceptional hospitality.
+            We have been here for years because we care about the details. Good cigars, good company, and a space that feels like yours.
           </p>
         </div>
 

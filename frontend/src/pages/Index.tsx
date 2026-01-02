@@ -41,16 +41,16 @@ const Index = () => {
         <section className="py-24 bg-charcoal">
           <div className="section-container text-center max-w-3xl">
             <h2 className="font-display text-4xl md:text-5xl text-cream mb-6">
-              Discover Our <span className="text-gold">Curated Cigars</span>
+              Find Your <span className="text-gold">Next Favorite</span>
             </h2>
 
             <p className="text-muted-foreground text-lg mb-10">
-              Explore premium cigar origins from around the world — each
-              carefully selected, properly stored, and ready to enjoy.
+              From bold Nicaraguans to smooth Dominicans, we have got something for every palate. 
+              Walk in, take your time, and let us help you pick one that is just right.
             </p>
 
             <Link to="/cigar-brands" className="btn-secondary inline-flex">
-              Explore Cigars
+              See What We Carry
               <ArrowRight className="w-5 h-5 ml-2" />
             </Link>
           </div>

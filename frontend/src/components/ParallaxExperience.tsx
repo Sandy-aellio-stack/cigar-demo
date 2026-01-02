@@ -13,47 +13,47 @@ const sections = [
     id: "lounge",
     bgImage: loungeBg,
     label: "The Lounge",
-    title: "This isn't a shop.",
-    titleHighlight: "It's a place to arrive.",
+    title: "Not just a shop.",
+    titleHighlight: "A place to unwind.",
     description:
-      "Walk in. Slow down. Choose a cigar that fits the moment. Whether it's your first visit or your hundredth, Smokies is designed for people who appreciate time, craft, and atmosphere.",
+      "Take a seat. Pick your smoke. Forget about the clock for a while. Whether you are here for the first time or the fiftieth, this is a space made for slowing down and savoring the moment.",
     subtext:
-      "Leather seating. Espresso in hand. Conversations that linger longer than the smoke.",
+      "Comfortable leather chairs, good conversation, and a coffee that is always fresh.",
   },
   {
     id: "humidor",
     bgImage: humidorBg,
     label: "The Humidor",
-    title: "Perfectly preserved.",
-    titleHighlight: "Always ready.",
+    title: "Stored right.",
+    titleHighlight: "Ready when you are.",
     description:
-      "Our climate-controlled humidors maintain the ideal 70/70 environment - 70 degrees, 70% humidity. Every cigar is stored at its peak, waiting for the right moment.",
+      "We keep our humidors at 70 degrees and 70% humidity year round. That means every cigar burns clean and tastes the way the maker intended. No dried-out sticks here.",
     subtext:
-      "Cuban-style, Dominican, Nicaraguan, Honduran - curated origins from around the world.",
+      "Cubans, Dominicans, Nicaraguans, Hondurans — we have traveled the world so you do not have to.",
   },
   {
     id: "theater",
     bgImage: theaterLounge,
-    label: "The Experience",
-    title: "More than cigars.",
-    titleHighlight: "A destination.",
+    label: "The Vibe",
+    title: "More than smoke.",
+    titleHighlight: "A whole experience.",
     description:
-      "Big screens for the game. Pool tables for competition. A coffee bar for conversation. Smokies is where moments become memories.",
+      "Catch the game on the big screen. Challenge a friend at pool. Or just sit back with an espresso and watch the world go by. This is the kind of place where an hour turns into three.",
     subtext:
-      "Two levels of comfort. Endless reasons to stay.",
+      "Two floors. Plenty of room. No reason to rush out.",
   },
   {
     id: "why",
     bgImage: whyBg,
-    label: "Why Smokies",
-    title: "Because the experience",
-    titleHighlight: "matters as much as the cigar.",
+    label: "Why Us",
+    title: "Because it is about",
+    titleHighlight: "more than just the cigar.",
     description:
-      "Smokies is built around time — not transactions. A place designed to slow the pace, where cigars are stored properly and enjoyed without rush.",
+      "We built Smokies around the experience, not just the sale. A good cigar deserves the right setting, the right company, and the time to actually enjoy it.",
     subtext:
-      "Whether you stop in briefly or stay for the evening, Smokies is a place you arrive — and don't hurry to leave.",
+      "Stop in for a quick smoke or stay for the evening. Either way, you will feel at home.",
     cta: {
-      text: "Why Locals Love Smokies",
+      text: "Hear What Our Guests Say",
       link: "/why-us",
     },
   },
