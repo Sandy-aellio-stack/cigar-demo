@@ -167,29 +167,29 @@ const Contact = () => {
                         </div>
                         <div>
                           <h3 className="font-medium text-cream mb-2">Business Hours</h3>
-                          <ul className="text-muted-foreground space-y-1">
+                          <ul className="text-muted-foreground space-y-1 text-sm">
                             {location.hours.saturday === 'Closed' && location.hours.sunday === 'Closed' ? (
                               <>
-                                <li className="flex justify-between gap-8">
-                                  <span>Monday - Friday</span>
+                                <li className="flex justify-between gap-4">
+                                  <span>Mon - Fri</span>
                                   <span>{location.hours.monday}</span>
                                 </li>
-                                <li className="flex justify-between gap-8">
-                                  <span>Saturday - Sunday</span>
+                                <li className="flex justify-between gap-4">
+                                  <span>Sat - Sun</span>
                                   <span>Closed</span>
                                 </li>
                               </>
                             ) : (
                               <>
-                                <li className="flex justify-between gap-8">
-                                  <span>Monday - Thursday</span>
+                                <li className="flex justify-between gap-4">
+                                  <span>Mon - Thu</span>
                                   <span>{location.hours.monday}</span>
                                 </li>
-                                <li className="flex justify-between gap-8">
-                                  <span>Friday - Saturday</span>
+                                <li className="flex justify-between gap-4">
+                                  <span>Fri - Sat</span>
                                   <span>{location.hours.friday}</span>
                                 </li>
-                                <li className="flex justify-between gap-8">
+                                <li className="flex justify-between gap-4">
                                   <span>Sunday</span>
                                   <span>{location.hours.sunday}</span>
                                 </li>

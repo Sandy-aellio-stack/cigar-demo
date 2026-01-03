@@ -43,7 +43,7 @@ const Header = () => {
             <img
               src={logo}
               alt="Smokies Cigar Lounge Reading PA"
-              className="h-14 w-auto"
+              className="h-10 sm:h-14 w-auto"
             />
           </Link>
 

@@ -72,13 +72,14 @@ const HeroCarousel = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
+            className="px-4"
           >
-            <div className="flex justify-center gap-3 mb-6">
+            <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-6">
               {locations.map((loc, i) => (
                 <button
                   key={loc.label}
                   onClick={() => setLocationIndex(i)}
-                  className={`px-4 py-1 text-sm rounded-full border transition ${
+                  className={`px-3 sm:px-4 py-1.5 text-xs sm:text-sm rounded-full border transition ${
                     i === locationIndex
                       ? "bg-gold text-charcoal border-gold"
                       : "border-cream/30 text-cream/80 hover:border-gold"
@@ -89,42 +90,42 @@ const HeroCarousel = () => {
               ))}
             </div>
 
-            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl text-cream mb-4">
+            <h1 className="font-display text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-cream mb-4">
               Smokies Cigar Lounge
             </h1>
 
-            <p className="text-cream-dark text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+            <p className="text-cream-dark text-base sm:text-lg md:text-xl mb-6 sm:mb-8 max-w-2xl mx-auto px-2">
               Where good cigars meet great company. Pull up a chair, grab a coffee, and stay awhile.
             </p>
 
-            <div className="flex flex-wrap justify-center gap-4 mb-10">
-              <div className="trust-badge">
-                <Star className="w-4 h-4 text-gold" fill="currentColor" />
+            <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-8 sm:mb-10 px-2">
+              <div className="trust-badge text-xs sm:text-sm">
+                <Star className="w-3 h-3 sm:w-4 sm:h-4 text-gold" fill="currentColor" />
                 <span>Rated #1 in Reading</span>
               </div>
-              <div className="trust-badge">
-                <ThermometerSnowflake className="w-4 h-4 text-gold" />
-                <span>Perfect Humidity, Every Time</span>
+              <div className="trust-badge text-xs sm:text-sm">
+                <ThermometerSnowflake className="w-3 h-3 sm:w-4 sm:h-4 text-gold" />
+                <span>Perfect Humidity</span>
               </div>
-              <div className="trust-badge">
-                <Coffee className="w-4 h-4 text-gold" />
-                <span>Fresh Espresso On Tap</span>
+              <div className="trust-badge text-xs sm:text-sm">
+                <Coffee className="w-3 h-3 sm:w-4 sm:h-4 text-gold" />
+                <span>Fresh Espresso</span>
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 px-4">
               <a
                 href={primaryLocation.directionsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-primary px-8 py-3"
+                className="btn-primary px-6 sm:px-8 py-3 text-sm sm:text-base"
               >
                 <MapPin className="w-4 h-4" />
                 Get Directions
               </a>
               <a
                 href={`tel:${primaryLocation.phone.tel}`}
-                className="btn-secondary px-8 py-3"
+                className="btn-secondary px-6 sm:px-8 py-3 text-sm sm:text-base"
               >
                 <Phone className="w-4 h-4" />
                 Call Lounge
