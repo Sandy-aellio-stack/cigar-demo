@@ -16,6 +16,15 @@ import CigarCursor from "@/components/CigarCursor";
 const queryClient = new QueryClient();
 
 const SmokeTransition = ({ locationKey }: { locationKey: string }) => {
+  const smokeElements = [
+    { width: 200, height: 120, left: 5, delay: 0, duration: 1.4, xDrift: 40 },
+    { width: 280, height: 160, left: 20, delay: 0.05, duration: 1.5, xDrift: -30 },
+    { width: 320, height: 180, left: 40, delay: 0.1, duration: 1.6, xDrift: 50 },
+    { width: 260, height: 150, left: 60, delay: 0.08, duration: 1.45, xDrift: -45 },
+    { width: 220, height: 130, left: 75, delay: 0.12, duration: 1.55, xDrift: 35 },
+    { width: 180, height: 100, left: 88, delay: 0.15, duration: 1.35, xDrift: -25 },
+  ];
+
   return (
     <motion.div
       key={`smoke-${locationKey}`}
@@ -23,39 +32,60 @@ const SmokeTransition = ({ locationKey }: { locationKey: string }) => {
       style={{ zIndex: 9999 }}
       initial={{ opacity: 1 }}
       animate={{ opacity: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
+      transition={{ duration: 1.2, ease: [0.4, 0, 0.2, 1], delay: 0.1 }}
     >
       <motion.div
         className="absolute inset-0"
         style={{
-          background: "linear-gradient(180deg, rgba(20,20,20,0.95) 0%, rgba(30,30,30,0.85) 100%)"
+          background: "linear-gradient(180deg, rgba(15,15,15,0.97) 0%, rgba(25,25,25,0.92) 50%, rgba(35,35,35,0.85) 100%)"
         }}
         initial={{ opacity: 1 }}
         animate={{ opacity: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
       />
 
-      {[...Array(4)].map((_, i) => (
+      {smokeElements.map((smoke, i) => (
         <motion.div
           key={i}
-          className="absolute rounded-full"
+          className="absolute"
           style={{
-            width: `${150 + i * 100}px`,
-            height: `${100 + i * 60}px`,
-            left: `${10 + i * 20}%`,
-            bottom: "-10%",
-            background: `radial-gradient(ellipse, rgba(160, 160, 160, ${0.3 - i * 0.05}) 0%, transparent 70%)`,
-            filter: `blur(${30 + i * 10}px)`,
+            width: `${smoke.width}px`,
+            height: `${smoke.height}px`,
+            left: `${smoke.left}%`,
+            bottom: "-12%",
+            background: `radial-gradient(ellipse, rgba(180, 175, 170, 0.35) 0%, rgba(140, 135, 130, 0.2) 35%, transparent 70%)`,
+            filter: "blur(25px)",
+            borderRadius: "50%",
           }}
-          initial={{ y: 0, opacity: 0.4, scale: 1 }}
-          animate={{ y: -400 - i * 80, opacity: 0, scale: 1.8 }}
+          initial={{ 
+            y: 0, 
+            opacity: 0.5, 
+            scale: 1,
+            x: 0,
+          }}
+          animate={{
+            y: -550,
+            opacity: 0,
+            scale: 2.2,
+            x: smoke.xDrift,
+          }}
           transition={{
-            duration: 1 + i * 0.1,
-            delay: i * 0.05,
+            duration: smoke.duration,
+            delay: smoke.delay,
             ease: [0.25, 0.1, 0.25, 1],
           }}
         />
       ))}
+
+      <motion.div
+        className="absolute inset-0"
+        style={{
+          background: "linear-gradient(0deg, rgba(120,115,110,0.12) 0%, transparent 25%)",
+        }}
+        initial={{ opacity: 0.7, y: 0 }}
+        animate={{ opacity: 0, y: -150 }}
+        transition={{ duration: 1.1, ease: "easeOut" }}
+      />
     </motion.div>
   );
 };
