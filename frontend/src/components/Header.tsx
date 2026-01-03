@@ -143,10 +143,10 @@ const Header = () => {
       {isScrolled && (
         <a
           href={`tel:${primaryLocation.phone.tel}`}
-          className="fixed bottom-6 right-6 lg:hidden btn-primary rounded-full p-4 shadow-glow animate-pulse-glow z-50"
+          className="fixed bottom-20 left-4 lg:hidden btn-primary rounded-full p-3 shadow-glow z-40"
           aria-label={`Call ${BUSINESS_INFO.name}`}
         >
-          <Phone className="w-6 h-6" />
+          <Phone className="w-5 h-5" />
         </a>
       )}
     </header>
