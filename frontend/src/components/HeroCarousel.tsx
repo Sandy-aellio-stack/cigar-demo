@@ -27,7 +27,7 @@ const locations = [
     est: 2020,
   },
   {
-    label: "Reading City",
+    label: "Downtown Reading",
     est: 2025,
   },
 ];
