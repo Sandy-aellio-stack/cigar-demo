@@ -90,24 +90,24 @@ const HeroCarousel = () => {
               ))}
             </div>
 
-            <h1 className="font-display text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-cream mb-4">
+            <h1 className="font-display text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-cream mb-4 font-bold drop-shadow-lg">
               Smokies Cigar Lounge
             </h1>
 
-            <p className="text-cream-dark text-base sm:text-lg md:text-xl mb-6 sm:mb-8 max-w-2xl mx-auto px-2">
+            <p className="text-cream text-base sm:text-lg md:text-xl mb-6 sm:mb-8 max-w-2xl mx-auto px-2 font-medium drop-shadow-md">
               Where good cigars meet great company. Pull up a chair, grab a coffee, and stay awhile.
             </p>
 
             <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-8 sm:mb-10 px-2">
-              <div className="trust-badge text-xs sm:text-sm">
+              <div className="trust-badge text-xs sm:text-sm font-semibold">
                 <Star className="w-3 h-3 sm:w-4 sm:h-4 text-gold" fill="currentColor" />
                 <span>Rated #1 in Reading</span>
               </div>
-              <div className="trust-badge text-xs sm:text-sm">
+              <div className="trust-badge text-xs sm:text-sm font-semibold">
                 <ThermometerSnowflake className="w-3 h-3 sm:w-4 sm:h-4 text-gold" />
                 <span>Perfect Humidity</span>
               </div>
-              <div className="trust-badge text-xs sm:text-sm">
+              <div className="trust-badge text-xs sm:text-sm font-semibold">
                 <Coffee className="w-3 h-3 sm:w-4 sm:h-4 text-gold" />
                 <span>Fresh Espresso</span>
               </div>
