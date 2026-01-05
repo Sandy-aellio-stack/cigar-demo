@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 
 import loungeBg from "@/assets/brick-lounge.jpeg";
 import humidorBg from "@/assets/humidor-closeup.jpeg";
-import whyBg from "@/assets/friends-lounge.jpeg";
+import whyBg from "@/assets/why-us-bg.jpeg";
 import theaterLounge from "@/assets/theater-lounge.jpeg";
 
 const sections = [
