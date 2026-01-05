@@ -16,7 +16,7 @@ const sections = [
     title: "Not just a shop.",
     titleHighlight: "A place to unwind.",
     description:
-      "Take a seat. Pick your smoke. Forget about the clock for a while. Whether you are here for the first time or the fiftieth, this is a space made for slowing down and savoring the moment.",
+      "Grab your favourite cigar, take a seat and forget about the time for a while. Whether it's your first time here, or the fiftieth, this is a place for slowing down and savouring the moment.",
     subtext:
       "Comfortable leather chairs, good conversation, and a coffee that is always fresh.",
   },
