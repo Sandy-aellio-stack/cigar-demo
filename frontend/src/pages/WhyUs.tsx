@@ -18,8 +18,8 @@ const reviews = [
     rating: 5,
   },
   {
-    name: 'Brian Dunn',
-    text: 'First time visiting this Location and expectations were exceeded! The vast selection, comfortable atmosphere and great customer service from Maria - assures we will be back!',
+    name: 'Chas',
+    text: "A great place for a cappuccino and a cigar. Friendly staff and huge selection. They have their own brand of quality cigars! I've been a member for two years without any problems and they even have a spare key for me when I forget mine!",
     rating: 5,
   },
   {
