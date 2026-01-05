@@ -90,7 +90,7 @@ const HeroCarousel = () => {
             </h1>
 
             <p className="text-cream text-base sm:text-lg md:text-xl mb-6 sm:mb-8 max-w-2xl mx-auto px-2 font-bold drop-shadow-lg">
-              Where good cigars meet great company. Pull up a chair, grab a coffee, and stay awhile.
+              Your second living room with better cigars. Where good cigars meet great company.
             </p>
 
             <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-8 sm:mb-10 px-2">
