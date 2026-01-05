@@ -178,9 +178,9 @@ const WhyUs = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
               >
-                <h3 className="text-2xl text-cream font-display mb-4">Espresso Bar</h3>
+                <h3 className="text-2xl text-cream font-display mb-4">Member Lockers</h3>
                 <p className="text-cream/70 text-lg leading-relaxed">
-                  We use high-quality espresso imported from Italy, crafted using multiple brewing methods.
+                  Members receive their own humidified locker to store their favorite cigars.
                 </p>
               </motion.div>
 
@@ -190,9 +190,9 @@ const WhyUs = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.2, ease: "easeIn" }}
               >
-                <h3 className="text-2xl text-cream font-display mb-4">BYOB Friendly</h3>
+                <h3 className="text-2xl text-cream font-display mb-4">Espresso Bar</h3>
                 <p className="text-cream/70 text-lg leading-relaxed">
-                  BYOB friendly. A corking fee may apply for all non-members.
+                  We use high-quality espresso imported from Italy, crafted using multiple brewing methods.
                 </p>
               </motion.div>
 
@@ -214,9 +214,9 @@ const WhyUs = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.4, ease: "easeIn" }}
               >
-                <h3 className="text-2xl text-cream font-display mb-4">Members Locker</h3>
+                <h3 className="text-2xl text-cream font-display mb-4">BYOB Friendly</h3>
                 <p className="text-cream/70 text-lg leading-relaxed">
-                  Members receive their own humidified locker to store their favorite cigars.
+                  BYOB friendly. A corking fee may apply for all non-members.
                 </p>
               </motion.div>
             </div>
