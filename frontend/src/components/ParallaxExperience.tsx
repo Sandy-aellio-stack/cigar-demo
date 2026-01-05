@@ -29,7 +29,7 @@ const sections = [
     description:
       "We keep our humidors at 70 degrees and 70% humidity year round. That means every cigar burns clean and tastes the way the maker intended. No dried-out sticks here.",
     subtext:
-      "Cubans, Dominicans, Nicaraguans, Hondurans — we have traveled the world so you do not have to.",
+      "Cuban-seed, Dominicans, Nicaraguans, Hondurans — we have traveled the world so you do not have to.",
   },
   {
     id: "theater",

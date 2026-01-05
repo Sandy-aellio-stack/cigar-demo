@@ -118,7 +118,7 @@ const TopQuality = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.3 }}
               >
-                Cuban-style, Dominican, Nicaraguan, Honduran — curated origins from around the world.
+                Cuban-seed, Dominican, Nicaraguan, Honduran — curated origins from around the world.
               </motion.p>
             </motion.div>
 

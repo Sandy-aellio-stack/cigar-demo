@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const origins = [
   {
-    name: "Cuban-Style",
+    name: "Cuban-Seed",
     origin: "Various",
     description: "Rich, complex profiles with deep earthy undertones",
     intensity: 8,
