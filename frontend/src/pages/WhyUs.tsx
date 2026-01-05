@@ -13,18 +13,18 @@ import patioGroup from '@/assets/patio-group.jpeg';
 
 const reviews = [
   {
-    name: 'Mike R.',
-    text: 'Walked in not knowing much about cigars. The guy behind the counter spent 20 minutes helping me find something I actually liked. Been coming back every week since.',
+    name: 'Pamela McCain',
+    text: 'I love the ambiance. The feeling here is just right! The perfect smoke lounge! You have to come by and visit at least once. Come try one of their great cigars! BYOB. So you can have a glass of your favorite drink with your favorite cigar.',
     rating: 5,
   },
   {
-    name: 'David S.',
-    text: 'This is my escape. Good leather chair, good smoke, good people. Time moves differently here.',
+    name: 'Brian Dunn',
+    text: 'First time visiting this Location and expectations were exceeded! The vast selection, comfortable atmosphere and great customer service from Maria - assures we will be back!',
     rating: 5,
   },
   {
-    name: 'James T.',
-    text: 'Stopped looking for another spot after I found Smokies. The cigars are always fresh and the vibe is exactly what you want after a long day.',
+    name: 'Yani',
+    text: "Talk about a great place to have a cigar without having to go too far! The staff is super friendly and great service! 5 stars all day! And try they're Cappuccino, it's also delicious! Cigars have NEVER been dry and always a great selection!",
     rating: 5,
   },
 ];
