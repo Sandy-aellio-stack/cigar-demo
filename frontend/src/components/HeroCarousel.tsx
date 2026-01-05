@@ -74,19 +74,14 @@ const HeroCarousel = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="px-4"
           >
-            <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-6">
-              {locations.map((loc, i) => (
-                <button
+            <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-6 px-2">
+              {locations.map((loc) => (
+                <div
                   key={loc.label}
-                  onClick={() => setLocationIndex(i)}
-                  className={`px-3 sm:px-4 py-1.5 text-xs sm:text-sm rounded-full border transition ${
-                    i === locationIndex
-                      ? "bg-gold text-charcoal border-gold"
-                      : "border-cream/30 text-cream/80 hover:border-gold"
-                  }`}
+                  className="trust-badge text-xs sm:text-sm font-semibold"
                 >
-                  {loc.label} · EST {loc.est}
-                </button>
+                  <span>{loc.label} · EST {loc.est}</span>
+                </div>
               ))}
             </div>
 
