@@ -89,7 +89,7 @@ const HeroCarousel = () => {
               Smokies Cigar Lounge
             </h1>
 
-            <p className="text-cream text-base sm:text-lg md:text-xl mb-6 sm:mb-8 max-w-2xl mx-auto px-2 font-medium drop-shadow-md">
+            <p className="text-cream text-base sm:text-lg md:text-xl mb-6 sm:mb-8 max-w-2xl mx-auto px-2 font-bold drop-shadow-lg">
               Where good cigars meet great company. Pull up a chair, grab a coffee, and stay awhile.
             </p>
 
