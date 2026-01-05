@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone, MapPin } from 'lucide-react';
 import logo from '@/assets/logo.png';
@@ -7,6 +7,8 @@ import BUSINESS_INFO, { getPrimaryLocation } from '@/config/businessInfo';
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isCallMenuOpen, setIsCallMenuOpen] = useState(false);
+  const callMenuRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
   const primaryLocation = getPrimaryLocation();
 
@@ -17,6 +19,18 @@ const Header = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (callMenuRef.current && !callMenuRef.current.contains(event.target as Node)) {
+        setIsCallMenuOpen(false);
+      }
+    };
+    if (isCallMenuOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [isCallMenuOpen]);
 
   const navLinks = [
     { name: 'Home', path: '/' },
@@ -75,13 +89,35 @@ const Header = () => {
               <MapPin className="w-4 h-4" />
               Get Directions
             </a>
-            <a
-              href={`tel:${primaryLocation.phone.tel}`}
-              className="btn-primary text-sm py-2 px-4"
-            >
-              <Phone className="w-4 h-4" />
-              Call Now
-            </a>
+            <div ref={callMenuRef} className="relative">
+              <button
+                onClick={() => setIsCallMenuOpen(!isCallMenuOpen)}
+                className="btn-primary text-sm py-2 px-4"
+              >
+                <Phone className="w-4 h-4" />
+                Call Now
+              </button>
+              {isCallMenuOpen && (
+                <div className="absolute top-full right-0 mt-2 bg-charcoal-deep border border-gold/30 rounded-lg p-4 shadow-lg min-w-[260px] z-50">
+                  <p className="text-cream/60 text-xs uppercase tracking-wider mb-3">CALL US</p>
+                  {BUSINESS_INFO.locations.map((loc) => (
+                    <a
+                      key={loc.id}
+                      href={`tel:${loc.phone.tel}`}
+                      className="flex flex-col py-3 border-b border-border last:border-b-0 hover:bg-gold/10 -mx-4 px-4 transition-colors"
+                    >
+                      <span className="text-cream font-medium">
+                        {loc.id === 'lancaster-ave' ? 'Lancaster Ave' : 'Downtown Reading'}
+                      </span>
+                      <span className="text-gold text-lg font-semibold flex items-center gap-2 mt-1">
+                        <Phone className="w-4 h-4" />
+                        {loc.phone.formatted}
+                      </span>
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
 
           {/* Mobile Menu Toggle */}
