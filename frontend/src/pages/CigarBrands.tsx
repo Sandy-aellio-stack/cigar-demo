@@ -299,10 +299,10 @@ const CigarBrands = () => {
               transition={{ duration: 0.9, ease: "easeOut" }}
             >
               <p className="text-gold font-medium mb-4 tracking-[0.3em] uppercase text-sm">
-                Our Products
+                Smokies Exclusives
               </p>
               <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-cream">
-                Premium
+                Our House
                 <br />
                 <span className="text-gold">Cigar Brands</span>
               </h2>
@@ -339,7 +339,7 @@ const CigarBrands = () => {
                   alt="Monogram Cigars"
                   className="w-full h-64 object-cover rounded-lg mb-6"
                 />
-                <h3 className="text-3xl text-cream font-display mb-4">Monogramme</h3>
+                <h3 className="text-3xl text-cream font-display mb-4">MONOGRAMME</h3>
                 <p className="text-cream/70 text-lg leading-relaxed">
                   Understated luxury crafted for everyday enjoyment. A smooth, approachable cigar that never compromises on quality.
                 </p>
@@ -361,9 +361,9 @@ const CigarBrands = () => {
                 Premium Brands
               </p>
               <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-cream mb-4">
-                World-Class
+                Premium Cigar
                 <br />
-                <span className="text-gold">Selection</span>
+                <span className="text-gold">Brands</span>
               </h2>
               <p className="text-cream/70 text-lg max-w-2xl mx-auto">
                 Click any brand to learn more about their unique flavor profiles and heritage.

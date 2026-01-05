@@ -17,7 +17,7 @@ const images = [
   { src: brickLounge, alt: "Brick wall lounge area" },
   { src: mezzanineView, alt: "Mezzanine view of the lounge" },
   { src: bigScreenLounge, alt: "Big screen lounge area" },
-  { src: coffeeBar, alt: "Coffee bar area" },
+  { src: coffeeBar, alt: "Espresso bar area" },
   { src: lounge2, alt: "Espresso bar at Smokies Cigar Lounge" },
 ];
 
