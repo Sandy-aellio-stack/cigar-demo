@@ -36,7 +36,7 @@ const cigarBrandGallery = [
     name: "Partagas",
     shortDesc: "Rich, earthy cigars with bold character.",
     website: "https://www.partagas.com",
-    tileImage: "/brands/partagas/tile.jpg",
+    tileImage: "/brands/partagas/tile.webp",
     content: `Partagas cigars are bold and earthy with a traditional, robust character and rich earth, leather, and black pepper notes.`,
   },
   {
@@ -120,7 +120,7 @@ const cigarBrandGallery = [
     name: "H. Upmann",
     shortDesc: "Historic brand with refined elegance.",
     website: "https://www.hupmann.com",
-    tileImage: "/brands/h-upmann/tile.jpg",
+    tileImage: "/brands/h-upmann/tile.png",
     content: `H. Upmann cigars are known for their refined, medium-bodied profile with notes of cedar, cream, and subtle spice. A classic choice for discerning smokers.`,
   },
   {
@@ -162,7 +162,7 @@ const cigarBrandGallery = [
     name: "Cohiba",
     shortDesc: "Luxury Dominican-made cigars.",
     website: "https://www.cohibacigars.com",
-    tileImage: "/brands/cohiba-dr/tile.jpg",
+    tileImage: "/brands/cohiba-dr/tile.webp",
     content: `Cohiba Dominican Republic cigars are smooth, elegant, and luxurious with creamy textures. Made in the Dominican Republic with premium aged tobaccos.`,
   },
   {
@@ -183,7 +183,7 @@ const cigarBrandGallery = [
     name: "Diesel",
     shortDesc: "Bold, powerful full-bodied cigars.",
     website: "https://dieselcigars.com",
-    tileImage: "/brands/diesel/tile.jpg",
+    tileImage: "/brands/diesel/tile.webp",
     content: `Diesel cigars deliver bold, full-bodied strength with intense flavors of espresso, dark chocolate, and pepper. Made for smokers who crave power.`,
   },
   {

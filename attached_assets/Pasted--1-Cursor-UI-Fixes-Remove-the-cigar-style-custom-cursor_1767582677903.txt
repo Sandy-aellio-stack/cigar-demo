@@ -1,0 +1,141 @@
+🔹 1. Cursor & UI Fixes
+
+Remove the cigar-style custom cursor completely
+
+Remove cursor component
+
+Remove cursor-related CSS, JS, and event listeners
+
+Restore default system cursor
+
+Fix date / month / year formatting
+
+Ensure proper readable format (e.g., January 5, 2026)
+
+Fix any incorrect ordering or formatting issues
+
+Fix “Call Now” button
+
+Ensure it correctly triggers phone dialing on mobile (tel:)
+
+Verify desktop behavior is correct
+
+Add separate Call buttons for both shop locations
+
+Each location must have its own Call button
+
+Each button must call its respective phone number
+
+Attach Call button to the rating section
+
+Call buttons should appear alongside or directly under the ⭐ rating section
+
+🔹 2. Headings & Text Changes (Content Only)
+
+Update the following text everywhere it appears:
+
+Change “Premium Cigar Brands”
+→ Reword to something similar like
+“Premium Hand-Rolled Cigar Brands” or “Curated Premium Cigar Brands”
+
+Change “Discover our huge collection”
+→ Reword to a more refined sentence (keep tone premium)
+
+Change “MONOGRAMME”
+→ Correct naming and styling (ensure consistent capitalization & brand accuracy)
+
+Replace “Cuban” with “Cuban-seed” everywhere (very important)
+
+Fix “Entertainment” typo wherever incorrect
+
+🔹 3. Brand & Logo Updates
+
+Update only brand assets and sizing — do NOT change layout.
+
+Partagás
+
+Replace with a different official logo/version (clean & readable)
+
+Perdomo
+
+Reduce logo size so it visually matches other brands
+
+AJ Fernandez
+
+Replace text-based name with the official AJ Fernandez logo
+
+H. Upmann
+
+Update branding/logo to correct official version
+
+Cohiba
+
+Remove the word “Macassar”
+
+Keep only Cohiba branding
+
+Diesel
+
+Replace current logo with a cleaner / updated Diesel logo
+
+Gurkha
+
+Resize logo properly so it does not appear oversized
+
+🔹 4. Lounge / Experience Section Content Updates
+
+Apply these exact text updates:
+
+Coffee Bar
+
+Change title “Coffee Bar” → “Espresso Bar”
+
+Update description to:
+
+We use high-quality espresso imported from Italy, crafted using multiple brewing methods.
+
+BYOB Friendly
+
+Replace content with:
+
+BYOB friendly. A corking fee may apply for all non-members.
+
+Entertainment
+
+Replace description with:
+
+Challenge someone to a game of pool, catch the big game on one of our screens, or simply relax and make new friends.
+
+Members Locker
+
+Replace description with:
+
+Members receive their own humidified locker to store their favorite cigars.
+
+🔹 5. Final Global Terminology Rule (Very Important)
+
+Replace “Cuban” → “Cuban-seed”
+
+This must be applied:
+
+In UI text
+
+In descriptions
+
+In metadata
+
+Anywhere it appears across the project
+
+🔹 6. Final Checks Before Completion
+
+No broken imports
+
+No console errors
+
+Mobile & desktop Call buttons work correctly
+
+Logos are properly sized and aligned
+
+Text updates are consistent site-wide
+
+No visual regressions

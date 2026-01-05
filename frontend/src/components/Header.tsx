@@ -20,7 +20,7 @@ const Header = () => {
 
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'Cigar Brands', path: '/cigar-brands' },
+    { name: 'Premium Cigar Brands', path: '/cigar-brands' },
     { name: 'Top Quality', path: '/top-quality' },
     { name: 'Why Us', path: '/why-us' },
     { name: 'Contact', path: '/contact' },
