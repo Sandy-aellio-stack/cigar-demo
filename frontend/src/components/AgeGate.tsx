@@ -87,20 +87,20 @@ const AgeGate = ({ onVerified }: Props) => {
           <input
             type="text"
             inputMode="numeric"
-            placeholder="Month"
-            maxLength={2}
-            className="w-1/3 p-2 sm:p-3 bg-black border border-gray-700 rounded text-center text-sm sm:text-base"
-            onChange={(e) => setMonth(e.target.value.replace(/\D/g, ''))}
-            value={month}
-          />
-          <input
-            type="text"
-            inputMode="numeric"
             placeholder="Day"
             maxLength={2}
             className="w-1/3 p-2 sm:p-3 bg-black border border-gray-700 rounded text-center text-sm sm:text-base"
             onChange={(e) => setDay(e.target.value.replace(/\D/g, ''))}
             value={day}
+          />
+          <input
+            type="text"
+            inputMode="numeric"
+            placeholder="Month"
+            maxLength={2}
+            className="w-1/3 p-2 sm:p-3 bg-black border border-gray-700 rounded text-center text-sm sm:text-base"
+            onChange={(e) => setMonth(e.target.value.replace(/\D/g, ''))}
+            value={month}
           />
           <input
             type="text"
