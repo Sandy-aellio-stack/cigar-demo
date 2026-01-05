@@ -178,9 +178,9 @@ const WhyUs = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
               >
-                <h3 className="text-2xl text-cream font-display mb-4">Coffee Bar</h3>
+                <h3 className="text-2xl text-cream font-display mb-4">Espresso Bar</h3>
                 <p className="text-cream/70 text-lg leading-relaxed">
-                  Nothing pairs better with a good smoke than a well-made coffee. We pull fresh espresso all day, so you never have to choose between the two.
+                  We use high-quality espresso imported from Italy, crafted using multiple brewing methods.
                 </p>
               </motion.div>
 
@@ -192,7 +192,7 @@ const WhyUs = () => {
               >
                 <h3 className="text-2xl text-cream font-display mb-4">BYOB Friendly</h3>
                 <p className="text-cream/70 text-lg leading-relaxed">
-                  Prefer whiskey? Bring it. Craft beer? Sure. This is your time to unwind however you like.
+                  BYOB friendly. A corking fee may apply for all non-members.
                 </p>
               </motion.div>
 
@@ -204,7 +204,7 @@ const WhyUs = () => {
               >
                 <h3 className="text-2xl text-cream font-display mb-4">Entertainment</h3>
                 <p className="text-cream/70 text-lg leading-relaxed">
-                  Challenge someone to a game of pool. Catch the big game on one of our screens. Or just sit back and people-watch.
+                  Challenge someone to a game of pool, catch the big game on one of our screens, or simply relax and make new friends.
                 </p>
               </motion.div>
 
@@ -214,9 +214,9 @@ const WhyUs = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.4, ease: "easeIn" }}
               >
-                <h3 className="text-2xl text-cream font-display mb-4">Memberships</h3>
+                <h3 className="text-2xl text-cream font-display mb-4">Members Locker</h3>
                 <p className="text-cream/70 text-lg leading-relaxed">
-                  Become a regular and get treated like one. Members enjoy special pricing, exclusive events, and their own locker to store favorites.
+                  Members receive their own humidified locker to store their favorite cigars.
                 </p>
               </motion.div>
             </div>

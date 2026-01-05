@@ -85,29 +85,31 @@ const AgeGate = ({ onVerified }: Props) => {
 
         <div className="flex gap-2 sm:gap-3 mb-4">
           <input
-            type="number"
+            type="text"
             inputMode="numeric"
-            placeholder="MM"
-            max={12}
-            min={1}
+            placeholder="Month"
+            maxLength={2}
             className="w-1/3 p-2 sm:p-3 bg-black border border-gray-700 rounded text-center text-sm sm:text-base"
-            onChange={(e) => setMonth(e.target.value)}
+            onChange={(e) => setMonth(e.target.value.replace(/\D/g, ''))}
+            value={month}
           />
           <input
-            type="number"
+            type="text"
             inputMode="numeric"
-            placeholder="DD"
-            max={31}
-            min={1}
+            placeholder="Day"
+            maxLength={2}
             className="w-1/3 p-2 sm:p-3 bg-black border border-gray-700 rounded text-center text-sm sm:text-base"
-            onChange={(e) => setDay(e.target.value)}
+            onChange={(e) => setDay(e.target.value.replace(/\D/g, ''))}
+            value={day}
           />
           <input
-            type="number"
+            type="text"
             inputMode="numeric"
-            placeholder="YYYY"
+            placeholder="Year"
+            maxLength={4}
             className="w-1/3 p-2 sm:p-3 bg-black border border-gray-700 rounded text-center text-sm sm:text-base"
-            onChange={(e) => setYear(e.target.value)}
+            onChange={(e) => setYear(e.target.value.replace(/\D/g, ''))}
+            value={year}
           />
         </div>
 

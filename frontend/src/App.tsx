@@ -11,7 +11,6 @@ import TopQuality from "./pages/TopQuality";
 import WhyUs from "./pages/WhyUs";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
-import CigarCursor from "@/components/CigarCursor";
 
 const queryClient = new QueryClient();
 
@@ -120,7 +119,6 @@ const AnimatedRoutes = () => {
 
 const App = () => (
   <HelmetProvider>
-    <CigarCursor />  
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />

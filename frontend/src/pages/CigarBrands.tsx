@@ -76,7 +76,7 @@ const cigarBrandGallery = [
   },
   {
     name: "EP Carrillo",
-    shortDesc: "Boutique cigars with Cuban roots.",
+    shortDesc: "Boutique cigars with Cuban-seed roots.",
     website: "https://epcarrillo.com",
     tileImage: "/brands/ep-carrillo/tile.jpg",
     content: `EP Carrillo cigars focus on balance and precision, offering medium-bodied profiles with refined transitions.`,
@@ -132,7 +132,7 @@ const cigarBrandGallery = [
   },
   {
     name: "Bolivar",
-    shortDesc: "Bold, full-bodied Cuban heritage.",
+    shortDesc: "Bold, full-bodied Cuban-seed heritage.",
     website: "https://www.bolivarcigars.com",
     tileImage: "/brands/bolivar/tile.jpg",
     content: `Bolivar cigars are known for their bold, full-bodied character with rich notes of earth, leather, and dark spice. A powerful smoke for experienced enthusiasts.`,
@@ -160,10 +160,10 @@ const cigarBrandGallery = [
   },
   {
     name: "Cohiba",
-    shortDesc: "Luxury Dominican-made Cohiba.",
+    shortDesc: "Luxury Dominican-made cigars.",
     website: "https://www.cohibacigars.com",
     tileImage: "/brands/cohiba-dr/tile.jpg",
-    content: `Cohiba Dominican Republic cigars are smooth, elegant, and luxurious with creamy textures. Made in the Dominican Republic, not Cuba.`,
+    content: `Cohiba Dominican Republic cigars are smooth, elegant, and luxurious with creamy textures. Made in the Dominican Republic with premium aged tobaccos.`,
   },
   {
     name: "Ashton",
@@ -188,10 +188,10 @@ const cigarBrandGallery = [
   },
   {
     name: "La Gloria Cubana",
-    shortDesc: "Classic Cuban-style craftsmanship.",
+    shortDesc: "Classic Cuban-seed craftsmanship.",
     website: "https://www.lagloriacubana.com",
     tileImage: "/brands/la-gloria-cubana/tile.jpg",
-    content: `La Gloria Cubana cigars honor traditional Cuban cigar-making with rich, full-bodied profiles featuring notes of earth, leather, and sweet spice.`,
+    content: `La Gloria Cubana cigars honor traditional Cuban-seed cigar-making with rich, full-bodied profiles featuring notes of earth, leather, and sweet spice.`,
   },
 ];
 
@@ -264,9 +264,9 @@ const CigarBrands = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.9, delay: 0.1, ease: "easeOut" }}
             >
-              Premium Cigars
+              Our Cigar
               <br />
-              <span className="text-gold">& Brands</span>
+              <span className="text-gold">Collection</span>
             </motion.h1>
             <motion.p
               className="text-cream/80 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-8"
@@ -275,7 +275,7 @@ const CigarBrands = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2, ease: "easeIn" }}
             >
-              Discover our curated collection of the world's finest cigars, stored in optimal conditions and ready for your enjoyment.
+              Explore our wide selection of hand-rolled cigars from around the world, kept in perfect condition and waiting for you.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -339,7 +339,7 @@ const CigarBrands = () => {
                   alt="Monogram Cigars"
                   className="w-full h-64 object-cover rounded-lg mb-6"
                 />
-                <h3 className="text-3xl text-cream font-display mb-4">Monogram</h3>
+                <h3 className="text-3xl text-cream font-display mb-4">Monogramme</h3>
                 <p className="text-cream/70 text-lg leading-relaxed">
                   Understated luxury crafted for everyday enjoyment. A smooth, approachable cigar that never compromises on quality.
                 </p>
