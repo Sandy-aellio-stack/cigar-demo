@@ -264,7 +264,7 @@ const CigarBrands = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.9, delay: 0.1, ease: "easeOut" }}
             >
-              Our Cigar
+              Discover Our Huge
               <br />
               <span className="text-gold">Collection</span>
             </motion.h1>
@@ -302,9 +302,9 @@ const CigarBrands = () => {
                 Our Products
               </p>
               <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-cream">
-                Signature
+                Premium
                 <br />
-                <span className="text-gold">In-House Selections</span>
+                <span className="text-gold">Cigar Brands</span>
               </h2>
             </motion.div>
 
