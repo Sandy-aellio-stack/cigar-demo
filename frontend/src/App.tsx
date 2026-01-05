@@ -11,6 +11,7 @@ import TopQuality from "./pages/TopQuality";
 import WhyUs from "./pages/WhyUs";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import FloatingCallButton from "./components/FloatingCallButton";
 
 const queryClient = new QueryClient();
 
@@ -125,6 +126,7 @@ const App = () => (
         <Sonner />
         <BrowserRouter>
           <AnimatedRoutes />
+          <FloatingCallButton />
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>

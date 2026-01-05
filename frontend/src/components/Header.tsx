@@ -126,29 +126,12 @@ const Header = () => {
                   <MapPin className="w-4 h-4" />
                   Get Directions
                 </a>
-                <a
-                  href={`tel:${primaryLocation.phone.tel}`}
-                  className="btn-primary text-center"
-                >
-                  <Phone className="w-4 h-4" />
-                  Call Now
-                </a>
               </div>
             </div>
           </div>
         )}
       </nav>
 
-      {/* Sticky Call Button on Scroll */}
-      {isScrolled && (
-        <a
-          href={`tel:${primaryLocation.phone.tel}`}
-          className="fixed bottom-20 left-4 lg:hidden btn-primary rounded-full p-3 shadow-glow z-40"
-          aria-label={`Call ${BUSINESS_INFO.name}`}
-        >
-          <Phone className="w-5 h-5" />
-        </a>
-      )}
     </header>
   );
 };
