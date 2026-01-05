@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Star } from 'lucide-react';
+import { Star, Phone, MapPin } from 'lucide-react';
 import BUSINESS_INFO from '@/config/businessInfo';
 
 import brickLounge from '@/assets/brick-lounge.jpeg';
@@ -281,22 +281,30 @@ const WhyUs = () => {
                 Come See for Yourself
               </h3>
               <div className="flex flex-col gap-6">
-                {locations.map((location, index) => (
-                  <div key={location.id} className="flex flex-col sm:flex-row gap-3 justify-center items-center">
-                    <span className="text-cream/80 font-medium text-sm">
-                      {location.id === 'lancaster-ave' ? 'Lancaster Ave' : 'Downtown Reading'}:
+                {locations.map((location) => (
+                  <div key={location.id} className="flex flex-col gap-3 items-center">
+                    <span className="text-cream font-medium">
+                      {location.id === 'lancaster-ave' ? 'Lancaster Ave' : 'Downtown Reading'}
                     </span>
-                    <a
-                      href={location.directionsUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn-primary text-sm px-4 py-2"
-                    >
-                      Get Directions
-                    </a>
-                    <a href={`tel:${location.phone.tel}`} className="btn-secondary text-sm px-4 py-2">
-                      Call {location.phone.formatted}
-                    </a>
+                    <span className="text-cream/60 text-sm">{location.address.full}</span>
+                    <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
+                      <a
+                        href={location.directionsUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn-primary text-sm px-4 py-2 inline-flex items-center gap-2"
+                      >
+                        <MapPin className="w-4 h-4" />
+                        Get Directions
+                      </a>
+                      <a 
+                        href={`tel:${location.phone.tel}`} 
+                        className="btn-secondary text-sm px-4 py-2 inline-flex items-center gap-2"
+                      >
+                        <Phone className="w-4 h-4" />
+                        Call {location.phone.formatted}
+                      </a>
+                    </div>
                   </div>
                 ))}
               </div>
